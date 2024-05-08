@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+* {
+    color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.game-container {
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-container {
+    text-align: center;
+    width: 110px;
+}
+
+.title-container h1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(145, 4, 134);
+    font-size: 1.4rem;
+    margin-left: 15rem;
+    margin-top: 1px;
+}
+
+.tile-container {
+    width: 500px;
+    margin-bottom:20px;
+}
+
+.key-container {
+    width: 510px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.key-container button {
+    width: 43px;
+    height: 54px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border: none;
+    text-transform: uppercase;
+    text-decoration-style: solid;
+    font-weight: 1000;
+    font-size: 20px;
+    font-size-adjust: inherit;
+    background-color: rgb(226, 232, 240);
+    color: black;
+    text-transform: uppercase;
+    margin: 4px;
+    margin-bottom: 3px;
+}
+
+.key-container button:nth-child(11) {
+    margin-left: 55px;
+}
+
+.key-container button:nth-child(16),
+.key-container button:nth-child(17) {
+    width: 70px;
+}
+
+.tile-container div {
+    display: flex;
+}
+
+.tile-container .tile {
+    width: 60px;
+    height: 50px;
+    border: 2px solid #989484;
+    background-color: #989484;
+    border-radius: 6px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    font-weight: 1000;
+    align-items: center;
+    color: #ffffff;
+    margin: 12px 2px 1px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+
+.message-container {
+    height: 60px;
+    margin-right: 50px;
+}
+
+.message-container p {
+    background-color: rgb(226, 232, 240);
+    color: black;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 4px;
+    margin: 5px;
+}
+
+.tile .flip {
+    animation: 1s linear flipping;
+    -webkit-animation: 1s linear flipping;
+}
+
+@keyframes flipping {
+    0% {
+        transform: rotateX(0deg);
+        -webkit-transform: rotateX(0deg);
+        -moz-transform: rotateX(0deg);
+        -ms-transform: rotateX(0deg);
+        -o-transform: rotateX(0deg);
+    }
+    50% {
+        transform: rotateX(90deg);
+        -webkit-transform: rotateX(90deg);
+        -moz-transform: rotateX(90deg);
+        -ms-transform: rotateX(90deg);
+        -o-transform: rotateX(90deg);
+}
+   100% {
+        transform: rotateX(0deg);
+        -webkit-transform: rotateX(0deg);
+        -moz-transform: rotateX(0deg);
+        -ms-transform: rotateX(0deg);
+        -o-transform: rotateX(0deg);
+    }
+}
+
+.black-overlay {
+    background-color: rgb(58, 54, 54) !important;
+    border: none !important;
+}
+
+.purple-overlay {
+    background-color: rgb(192, 47, 192) !important;
+    border: none !important;
+}
+
+.green-overlay {
+    background-color: #538d4e !important;
+    border: none !important;
+}
+
+@media screen and (max-width: 768px){
+    .game-container {
+        height: 50vh;
+        margin: 0 auto;
+    }
+
+    .title-container h1 {
+        margin-right: 1rem;
+        margin-left: 11.5rem;
+    }
+    
+    .key-container {
+        width: 400px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .key-container button {
+        width: 30px;
+        height: 45px;
+        font-size: 18px;
+    }
+    .key-container button:nth-child(11) {
+        margin-left: 30px;
+    }
+    
+    .key-container button:nth-child(16),
+    .key-container button:nth-child(17) {
+        width: 64px;
+    }
+
+    .tile-container {
+        width: 400px;
+        margin-bottom:2.2rem;
+    }
+
+    .tile-container .tile {
+        width: 50px;
+        height: 45px;
+        margin: 13px 2px 2px;
+    }
+    .message-container {
+        margin-left: 50px;
+        height: 40px;
+    }
+}
+nav {
+    background-color: #333; /* Set background color */
+    color: #fff; /* Set text color */
+    padding: 10px; /* Add some padding */
+}
+
+nav ul {
+    list-style-type: none; /* Remove default list styles */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 20px; /* Add some spacing between items */
+}
+
+nav ul li a {
+    color: #fff; /* Set link text color */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 16px; /* Set font size */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+ .carousel-container {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .carousel-slide {
+    display: flex;
+    transition: transform 1s ease;
+  }
+
+  .carousel-item {
+    color: #333;
+    width: 400px;
+    flex: 0 0 auto;
+  }
+
+  .carousel-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .carousel-control {
+    cursor: pointer;
+    margin: 0 5px;
+    padding: 5px;
+    background-color: #00000029;
+    border-radius: 50%;
+  }

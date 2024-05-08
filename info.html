@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accordion Pane</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <ul>
+
+        <li><a href="play.html">Play</a></li>
+        <li><a href="info.html">About</a></li>
+    </ul> 
+  </nav>
+  <br>
+  <br>
+
+  <div class="carousel-container">
+    <div class="carousel-slide">
+      <div class="carousel-item" style="background-color: #9999ff;">
+        Guess the NERDLE in 6 tries. After each guess, the color of the tiles will change to show how close your guess was to today's solution.
+
+        There are 8 characters
+
+        A character is one of "0123456789+-*/=" (normally! We've added some extra maths symbols in games like maxi.nerdle but you'll see these on the keyboard)
+       
+        A valid guess must be a calculation that is mathematically correct.
+        So it must have one "="
+
+        Also, the number on the right of the "=" is just a number (not another calculation)
+
+        Standard order of operations applies, so calculate * and / before + and -
+       
+        Commutative answers are accepted. i.e. if today's answer is 10+20=30, then 20+10=30 will also be accepted. However the commutativity rule only applies when everything else matches today's target solution.</div>
+      
+        
+      <div class="carousel-item" style="background-color: #9999ff;"></div>
+      <div class="carousel-item" style="background-color: #ffff99;"> If you have any questions you can contact me via 231805003(stunumber)</div>
+    </div>
+  </div>
+  
+  <div class="carousel-controls">
+    <div class="carousel-control" onclick="nextSlide()">&#10094;</div>
+    <div class="carousel-control" onclick="prevSlide()">&#10095;</div>
+  </div>
+  
+
+<script src="info.js"></script>
+</body>
+</html>
+  
+
